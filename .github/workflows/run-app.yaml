@@ -16,13 +16,4 @@ jobs:
       - name: Install dependencies
         run: dotnet restore GithubActions.sln
       - name: Build
-        run: msbuild /p:Configuration=Release GithubActions.slnname: 'Basic Action'
-
-on: [push]
-
-jobs:
-  check-bats-version:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Basic Action
-        run: echo "Hello, World!"
+        run: msbuild /p:Configuration=Release GithubActions.sln
