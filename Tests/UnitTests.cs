@@ -30,9 +30,8 @@ namespace GithubActionsLab
             Assert.Throws<ArgumentNullException>(() => Program.Add(null, null));
         }
 
-        // Implement 3 tests per operation, following a similar pattern as above
         [Test]
-        public void Subtract_Valid()
+        public void Subtract_Valid_Akerberg()
         {
             Assert.AreEqual(5, Program.Subtract("10", "5"));
             Assert.AreEqual(74, Program.Subtract("77", "3"));
@@ -40,7 +39,7 @@ namespace GithubActionsLab
         }
 
         [Test]
-        public void Subtract_Invalid()
+        public void Subtract_Invalid_Akerberg()
         {
             Assert.Throws<FormatException>(() => Program.Subtract("3", "h"));
             Assert.Throws<FormatException>(() => Program.Subtract("a", "l"));
@@ -48,7 +47,7 @@ namespace GithubActionsLab
         }
 
         [Test]
-        public void Subtract_Null()
+        public void Subtract_Null_Akerberg()
         {
             Assert.Throws<ArgumentNullException>(() => Program.Subtract("8", null));
             Assert.Throws<ArgumentNullException>(() => Program.Subtract(null, null));
@@ -56,7 +55,7 @@ namespace GithubActionsLab
         }
 
         [Test]
-        public void Multiply_Valid()
+        public void Multiply_Valid_Akerberg()
         {
             Assert.AreEqual(64, Program.Multiply("8", "8"));
             Assert.AreEqual(198, Program.Multiply("99", "2"));
@@ -64,7 +63,7 @@ namespace GithubActionsLab
         }
 
         [Test]
-        public void Multiply_Invalid()
+        public void Multiply_Invalid_Akerberg()
         {
             Assert.Throws<FormatException>(() => Program.Multiply("f", "7"));
             Assert.Throws<FormatException>(() => Program.Multiply("99", "o"));
@@ -72,7 +71,7 @@ namespace GithubActionsLab
         }
 
         [Test]
-        public void Multiply_Null()
+        public void Multiply_Null_Akerberg()
         {
             Assert.Throws<ArgumentNullException>(() => Program.Multiply("9", null));
             Assert.Throws<ArgumentNullException>(() => Program.Multiply(null, null));
@@ -80,7 +79,7 @@ namespace GithubActionsLab
         }
 
         [Test]
-        public void Divide_Valid()
+        public void Divide_Valid_Akerberg()
         {
             Assert.AreEqual(8, Program.Divide("64", "8"));
             Assert.AreEqual(2, Program.Divide("10", "5"));
@@ -88,7 +87,7 @@ namespace GithubActionsLab
         }
 
         [Test]
-        public void Divide_Invalid()
+        public void Divide_Invalid_Akerberg()
         {
             Assert.Throws<FormatException>(() => Program.Divide("99", "e"));
             Assert.Throws<FormatException>(() => Program.Divide("9", "a"));
@@ -96,7 +95,7 @@ namespace GithubActionsLab
         }
 
         [Test]
-        public void Divide_Null()
+        public void Divide_Null_Akerberg()
         {
             Assert.Throws<ArgumentNullException>(() => Program.Divide(null, "33"));
             Assert.Throws<ArgumentNullException>(() => Program.Divide("3", null));
@@ -104,7 +103,7 @@ namespace GithubActionsLab
         }
 
         [Test]
-        public void Power_Valid()
+        public void Power_Valid_Akerberg()
         {
             Assert.AreEqual(27, Program.Power("3", "3"));
             Assert.AreEqual(64, Program.Power("8", "2"));
@@ -112,7 +111,7 @@ namespace GithubActionsLab
         }
 
         [Test]
-        public void Power_Invalid()
+        public void Power_Invalid_Akerberg()
         {
             Assert.Throws<FormatException>(() => Program.Power("d", "9"));
             Assert.Throws<FormatException>(() => Program.Power("d", "a"));
@@ -120,7 +119,7 @@ namespace GithubActionsLab
         }
 
         [Test]
-        public void Power_Null()
+        public void Power_Null_Akerberg()
         {
             Assert.Throws<ArgumentNullException>(() => Program.Power(null, "19"));
             Assert.Throws<ArgumentNullException>(() => Program.Power(null, null));
