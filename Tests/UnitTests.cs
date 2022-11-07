@@ -91,7 +91,7 @@ namespace GithubActionsLab
         public void Divide_Invalid()
         {
             Assert.Throws<FormatException>(() => Program.Divide("99", "e"));
-            Assert.Throws<DivideByZeroException>(() => Program.Divide("9", "0"));
+            Assert.Throws<FormatException>(() => Program.Divide("9", "a"));
             Assert.Throws<FormatException>(() => Program.Divide("a", "e"));
         }
 
