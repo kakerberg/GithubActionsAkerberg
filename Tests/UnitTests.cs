@@ -106,7 +106,7 @@ namespace GithubActionsLab
         [Test]
         public void Power_Valid()
         {
-            Assert.AreEqual(24, Program.Power("3", "3"));
+            Assert.AreEqual(27, Program.Power("3", "3"));
             Assert.AreEqual(64, Program.Power("8", "2"));
             Assert.AreEqual(144, Program.Power("12", "2"));
         }
